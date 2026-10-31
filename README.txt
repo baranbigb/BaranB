@@ -1,25 +1,12 @@
-# BaranB Website — Initial HTML Version
+BaranB website (multi-page)
 
-Files:
-- index.html
-- style.css
-- script.js
-- assets/products/  (put actual product images here)
+PAGES: index.html (Home), shop.html (All Products), toys.html, kitchen.html, beauty.html,
+       new-arrivals.html, deals.html, product.html (opens for each product).
 
-## Product update workflow
-All product data is centralized in `script.js` in the `products` array.
-When a real product photo, name, price and category are available, replace/add its object there.
-The website automatically renders product cards, category sections, search and cart.
+UPLOAD: keep the folder structure exactly as it is (css/, js/, images/ folders next to the .html files).
+  - Netlify Drop (app.netlify.com/drop): drag the whole folder in.
+  - GitHub: upload everything (all .html files + the css, js and images folders).
 
-## Important
-The Google Drive files supplied by the client were not imported in this initial build because the connected Google Drive reader is not available in this session. The design and structure are ready; exact Drive product images can be inserted once the image files are made available/uploaded.
-
-## Planned sections selected for BaranB
-1. Toys
-2. Keychains
-3. Kitchen & Home
-4. New Arrivals (home/category shortcut)
-5. Deals
-6. Gifts (shortcut/promo)
-7. About BaranB
-8. Contact / WhatsApp
+ADD OR CHANGE A PRODUCT: open js/data.js, copy one product block, change the values,
+and put its photos in the images/ folder. Prices, sale prices (oldPrice) and tags
+("bestseller" / "new") are all set in that file. Nothing else needs editing.
