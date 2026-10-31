@@ -1,158 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BaranB — Toys, Kitchen & Beauty Essentials</title>
-  <meta name="description" content="BaranB brings factory-direct toys, kitchen gadgets and personal-care essentials across Pakistan.">
-  <link rel="stylesheet" href="style.css">
-  <!-- Facebook Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window,document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1127793433183852');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1127793433183852&ev=PageView&noscript=1"/></noscript>
-  <!-- End Facebook Pixel Code -->
-  <script>
-  // Lead event: jab visitor WhatsApp order link par click kare
-  document.addEventListener('click',function(e){
-    var a=e.target.closest&&e.target.closest('a[href*="wa.me"],a[href*="whatsapp.com"]');
-    if(a&&window.fbq){fbq('track','Lead');}
-  });
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BaranB | Toys, Kitchen & Beauty essentials</title>
+<meta name="description" content="BaranB brings factory-direct toys, kitchen helpers and personal care tools across Pakistan. Order on WhatsApp.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="announcement">
-    <span>✦ Factory-Direct Prices</span><i></i><span>Quality Products</span><i></i><span>Nationwide Delivery Across Pakistan</span>
-    <span class="announcement-right">Follow Us: <a href="https://www.facebook.com/BaranBigB/" target="_blank">f</a> <a href="https://www.instagram.com/baranbigb/" target="_blank">◎</a> <a href="https://www.youtube.com/@BaranBigB" target="_blank">▶</a> <a href="https://www.tiktok.com/@baranbigb" target="_blank">♪</a> &nbsp;•&nbsp; Karachi, Pakistan</span>
-  </div>
+<div id="site-header"></div>
 
-  <header class="header">
-    <a class="brand" href="index.html">
-      <div class="brand-name"><span>Baran</span><b>B</b></div>
-      <small>Toys • Kitchen & Home • Beauty</small>
-    </a>
-    <nav>
-      <a class="active" href="#home">Home</a>
-      <a href="#toys">Toys</a>
-      <a href="#kitchen">Kitchen & Home</a>
-      <a href="#beauty">Beauty & Personal Care</a>
-      <a href="#deals">Deals <em>Hot</em></a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="header-actions">
-      <input id="search" type="search" placeholder="Search for products...">
-      <button id="searchBtn" aria-label="Search">⌕</button>
-      <button aria-label="Account">♙</button><button aria-label="Wishlist">♡</button>
-      <button id="cartBtn" aria-label="Cart">🛒<sup id="cartCount">0</sup></button>
-    </div>
-  </header>
+<section class="hero"><div class="slides" id="slides">
+ <div class="slide s1"><div class="wrap"><div><span class="eyebrow">Toys</span><h1>Toys that keep little hands busy</h1><p>Wind-up and musical toys your kids will love. Simple, screen-free fun.</p><a class="btn btn-orange" href="toys.html">Shop Toys</a></div>
+  <div class="hero-art"><img class="a1" src="images/robot-graphic.jpg" alt="Musical Dancing Robot"><img class="a2" src="images/wind-up-duck.jpg" alt="Wind-Up Duck"><img class="a3" src="images/thomas-train.jpg" alt="Thomas Train"></div></div></div>
+ <div class="slide s2"><div class="wrap"><div><span class="eyebrow">Kitchen &amp; Home</span><h1>Small helpers for a happier kitchen</h1><p>Water dispensers, ice cream makers and dish brushes that save time and effort.</p><a class="btn btn-orange" href="kitchen.html">Shop Kitchen &amp; Home</a></div>
+  <div class="hero-art"><img class="a1" src="images/water-dispenser.jpg" alt="Water Dispenser"><img class="a2" src="images/ice-cream-maker.jpg" alt="Ice Cream Roll Maker"><img class="a3" src="images/dish-brush.jpg" alt="Dish Brush"></div></div></div>
+ <div class="slide s3"><div class="wrap"><div><span class="eyebrow">Beauty &amp; Personal Care</span><h1>Your grooming, your time</h1><p>Simple USB rechargeable trimmers for everyday care at home.</p><a class="btn btn-blue" href="beauty.html">Shop Beauty</a></div>
+  <div class="hero-art one"><img class="a1" src="images/facial-trimmer.jpg" alt="2-in-1 Facial Trimmer"></div></div></div>
+</div>
+<button class="hero-nav prev" id="prev" aria-label="Previous">&#8249;</button><button class="hero-nav next" id="next" aria-label="Next">&#8250;</button>
+<div class="hero-dots" id="dots"></div></section>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="brush">Welcome to</div>
-        <h1><span>Baran</span><b>B</b></h1>
-        <h2>Toys, Kitchen &amp; Beauty Essentials</h2>
-        <div class="benefits">
-          <span>✓ High Quality<br><small>Products</small></span>
-          <span>◇ Factory-Direct<br><small>Prices</small></span>
-          <span>🚚 Nationwide<br><small>Delivery</small></span>
-        </div>
-        <a class="btn orange" href="#products">Shop Now →</a>
-      </div>
-      <div class="hero-art">
-        <div class="toy-circle">🧸</div><div class="toy-penguin">🐧</div><div class="toy-blocks">🧱</div>
-        <div class="scribble">Small<br>Toys<br><strong>Big</strong><br>Smiles</div>
-      </div>
-    </section>
+<div class="wrap"><div class="trust">
+ <div><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.3"/></svg></span><p><b>Factory-direct prices</b><span>Fair prices on every product</span></p></div>
+ <div><span class="ic"><svg class="i" viewBox="0 0 24 24"><rect x="1" y="7" width="14" height="10" rx="1"/><path d="M15 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="1.6"/><circle cx="17.5" cy="19" r="1.6"/></svg></span><p><b>Delivery across Pakistan</b><span>Ask us about your city</span></p></div>
+ <div><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.3L3 20l1.3-5.4A8.4 8.4 0 1 1 21 11.5Z"/></svg></span><p><b>Order on WhatsApp</b><span>Quick replies, easy ordering</span></p></div>
+</div></div>
 
-    <section class="category-strip">
-      <a href="#toys"><span>🚗</span><strong>Toys</strong><small>Fun for Every Age</small></a>
-      <a href="#kitchen"><span>🍳</span><strong>Kitchen & Home</strong><small>Smart Living</small></a>
-      <a href="#beauty"><span>💄</span><strong>Beauty & Care</strong><small>Gentle Daily Use</small></a>
-      <a href="#deals"><span>🎁</span><strong>Gifts</strong><small>Perfect for Every Occasion</small></a>
-      <a href="#products"><span>☆</span><strong>New Arrivals</strong><small>Explore Latest</small></a>
-      <a href="#deals"><span>％</span><strong>Deals</strong><small>Best Prices</small></a>
-    </section>
+<section class="section"><div class="wrap"><div class="sec-head"><div><h2>Shop by category</h2><p>Three worlds, one trusted store.</p></div></div>
+<div class="cats">
+ <a class="cat" href="toys.html"><img src="images/penguin.jpg" alt="Toys"><div><h3>Toys</h3><span>Shop now &rarr;</span></div></a>
+ <a class="cat k" href="kitchen.html"><img src="images/water-dispenser.jpg" alt="Kitchen and Home"><div><h3>Kitchen &amp; Home</h3><span>Shop now &rarr;</span></div></a>
+ <a class="cat b" href="beauty.html"><img src="images/facial-trimmer.jpg" alt="Beauty and Personal Care"><div><h3>Beauty &amp; Personal Care</h3><span>Shop now &rarr;</span></div></a>
+</div></div></section>
 
-    <section class="section" id="products">
-      <div class="section-heading">
-        <div><label>BESTSELLERS</label><h2>Popular Picks</h2><p>Loved by kids, trusted by parents!</p></div>
-        <a class="btn blue" href="#all-products">View All Products →</a>
-      </div>
-      <div class="products" id="productGrid"></div>
-    </section>
+<section class="section alt"><div class="wrap"><div class="sec-head"><div><h2>New arrivals</h2><p>Just added to the store.</p></div><a class="link-arrow" href="new-arrivals.html">View all new arrivals &rarr;</a></div>
+<div class="grid" id="newGrid"></div></div></section>
 
-    <section class="promo-grid">
-      <article class="promo blue-promo"><div><h3>Toys for<br>Little Explorers</h3><p>Play • Learn • Grow</p><a href="#toys">Shop Now</a></div><span>🚙</span></article>
-      <article class="promo green-promo"><div><h3>Beauty &amp;<br>Personal Care</h3><p>Gentle, Daily-Use Essentials</p><a href="#beauty">Shop Now</a></div><span>💄</span></article>
-      <article class="promo yellow-promo"><div><h3>Smart Kitchen<br>Essentials</h3><p>Make Life Easier</p><a href="#kitchen">Shop Now</a></div><span>🥗</span></article>
-    </section>
+<section class="section"><div class="wrap"><div class="promo"><div><span class="eyebrow" style="background:rgba(255,255,255,.2)">Deals</span><h2>Dancing Robot and Dancing Bee</h2><p>Now Rs. 2,300 each (was Rs. 2,500). Lights, music and lots of fun.</p><a class="btn btn-orange" href="deals.html">See deals</a></div>
+<div class="pics"><img src="images/robot-graphic.jpg" alt="Dancing Robot"><img src="images/bee-graphic.jpg" alt="Dancing Bee"></div></div></div></section>
 
-    <section class="section category-section" id="toys">
-      <div class="category-title"><span>🧸</span><div><h2>Toys</h2><p>Fun, colorful picks for little explorers.</p></div></div>
-      <div class="products category-products" data-category="Toys"></div>
-    </section>
+<section class="section"><div class="wrap"><div class="sec-head"><div><h2>Best sellers</h2><p>The products families pick most.</p></div><a class="link-arrow" href="shop.html">View all products &rarr;</a></div>
+<div class="grid" id="bestGrid"></div></div></section>
 
-    <section class="section category-section" id="beauty">
-      <div class="category-title"><span>💄</span><div><h2>Beauty &amp; Personal Care</h2><p>Gentle, daily-use tools designed for comfort.</p></div></div>
-      <div class="products category-products" data-category="Beauty & Personal Care"></div>
-    </section>
+<section class="section alt"><div class="wrap"><div class="sec-head"><div><h2>How to order</h2><p>Three simple steps.</p></div></div>
+<div class="steps"><div class="step"><div class="n">1</div><h3>Choose your products</h3><p>Browse the store and add what you like to the cart.</p></div>
+<div class="step"><div class="n">2</div><h3>Send us your order</h3><p>Tap Order on WhatsApp and your cart is sent to us in one message.</p></div>
+<div class="step"><div class="n">3</div><h3>We confirm and deliver</h3><p>We confirm the details with you and arrange delivery.</p></div></div></div></section>
 
-    <section class="section category-section" id="kitchen">
-      <div class="category-title"><span>🍳</span><div><h2>Kitchen & Home</h2><p>Useful everyday essentials for smart living.</p></div></div>
-      <div class="products category-products" data-category="Kitchen & Home"></div>
-    </section>
+<section class="section"><div class="wrap about"><h2>About BaranB</h2><p>BaranB is a Karachi-based online brand bringing everyday essentials to Pakistani families at fair, factory-direct prices: toys the kids love, handy kitchen helpers and simple personal care tools. Every order is confirmed with you directly on WhatsApp, so you know exactly what you are getting.</p>
+<p style="margin-top:16px"><a class="btn btn-orange" target="_blank" rel="noopener" href="https://wa.me/923161068217?text=Hi%20BaranB">Chat with us on WhatsApp</a></p></div></section>
 
-    <section class="deal-banner" id="deals">
-      <div><label>LIMITED-TIME DEALS</label><h2>Factory-direct prices.<br>Better everyday value.</h2><p>Watch for new products and exclusive BaranB offers.</p><a class="btn orange" href="#products">Shop Deals →</a></div>
-      <div class="deal-badge">DEALS<br><strong>↓</strong></div>
-    </section>
-
-    <section class="trust">
-      <div>🚚 <strong>Nationwide Delivery</strong><small>Across Pakistan</small></div>
-      <div>🛡️ <strong>Secure Payments</strong><small>Cash on Delivery & Online</small></div>
-      <div>🎧 <strong>24/7 Customer Support</strong><small>We're Always Here</small></div>
-      <div>☆ <strong>Trusted by Customers</strong><small>Quality Products</small></div>
-    </section>
-
-    <section class="about" id="about">
-      <div><label>ABOUT BARANB</label><h2>Small products.<br>Big everyday value.</h2></div>
-      <p>BaranB brings factory-direct toys, kitchen gadgets and personal-care essentials to customers across Pakistan. Our goal is simple: quality products at affordable prices with an easy ordering experience.</p>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2>Need help choosing a product?</h2>
-      <p>Message BaranB on WhatsApp and we'll help you with product details, price and ordering.</p>
-      <a class="btn orange" href="https://wa.me/923161068217?text=Hi%20BaranB%2C%20I%20want%20to%20know%20about%20a%20product." target="_blank">Chat on WhatsApp →</a>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-main">
-      <div class="footer-brand"><div class="brand-name"><span>Baran</span><b>B</b></div><small>Toys • Kitchen & Home • Beauty</small></div>
-      <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#products">Shop All</a><a href="#about">About Us</a><a href="#contact">Contact Us</a></div>
-      <div><h4>Categories</h4><a href="#toys">Toys</a><a href="#kitchen">Kitchen & Home</a><a href="#beauty">Beauty & Personal Care</a><a href="#deals">Deals</a></div>
-      <div><h4>Follow Us</h4><div class="socials"><a href="https://www.facebook.com/BaranBigB/" target="_blank">f</a><a href="https://www.instagram.com/baranbigb/" target="_blank">◎</a><a href="https://www.youtube.com/@BaranBigB" target="_blank">▶</a><a href="https://www.tiktok.com/@baranbigb" target="_blank">♪</a></div><small>Let's stay connected!</small></div>
-      <div><h4>Subscribe to Our Newsletter</h4><small>Get latest updates, products & exclusive deals.</small><div class="subscribe"><input placeholder="Enter your email address"><button>Subscribe</button></div></div>
-    </div>
-    <div class="copyright">© 2026 BaranB. All rights reserved. <span>Karachi, Pakistan &nbsp; | &nbsp; Quality Products &nbsp; | &nbsp; Factory-Direct Prices &nbsp; | &nbsp; Nationwide Delivery</span></div>
-  </footer>
-
-  <div class="cart-drawer" id="cartDrawer"><button class="close" id="closeCart">×</button><h2>Your Cart</h2><div id="cartItems"></div><div class="cart-total">Total <strong id="cartTotal">Rs. 0</strong></div><button class="btn orange full" id="cartOrderBtn">Order on WhatsApp</button></div>
-  <div class="detail-modal" id="detailModal"><button class="close" id="closeDetail">×</button><div id="detailContent"></div></div>
-  <div class="overlay" id="overlay"></div>
-  <script src="script.js"></script>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
